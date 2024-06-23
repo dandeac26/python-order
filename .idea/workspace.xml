@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a75b950f-fdcb-46bf-b203-5a58bcad3a07" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/test2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../docker-compose.yaml" afterDir="false" />
+    <list default="true" id="a75b950f-fdcb-46bf-b203-5a58bcad3a07" name="Changes" comment="middleware python service">
+      <change beforePath="$PROJECT_DIR$/../../../Java/data-api/src/main/java/dev/dandeac/data_api/services/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Java/data-api/src/main/java/dev/dandeac/data_api/services/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../scripts/InitBasicProductsList.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../scripts/InitBasicProductsList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../scripts/client_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../scripts/client_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../scripts/clients.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../scripts/clients.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,14 +85,31 @@
       <workItem from="1718142455251" duration="5040000" />
       <workItem from="1718193510496" duration="12394000" />
       <workItem from="1718271435590" duration="4829000" />
-      <workItem from="1718445085535" duration="6466000" />
+      <workItem from="1718445085535" duration="6593000" />
+      <workItem from="1718548277794" duration="11070000" />
+      <workItem from="1718921750839" duration="2041000" />
+      <workItem from="1718953961548" duration="6870000" />
+      <workItem from="1719064065118" duration="9316000" />
     </task>
+    <task id="LOCAL-00001" summary="middleware python service">
+      <option name="closed" value="true" />
+      <created>1718491795437</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718491795437</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="middleware python service" />
+    <option name="LAST_COMMIT_MESSAGE" value="middleware python service" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/test2$main.coverage" NAME="main Coverage Results" MODIFIED="1718143700740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/test2$main.coverage" NAME="main Coverage Results" MODIFIED="1719095623038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

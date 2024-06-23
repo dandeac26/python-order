@@ -21,6 +21,10 @@ class Order(BaseModel):
     completionTime: str
     price: float
 
+class OrderDetail(BaseModel):
+    orderId: str
+    productId: str
+    quantity: int
 
 @app.get("/orders")
 async def read_orders():
@@ -50,10 +54,27 @@ async def create_order(order: Order, background_tasks: BackgroundTasks):
             for websocket in websockets:
                 await websocket.send_text("Refetch orders")
 
-            return {"message": "Order created successfully"}
+            return response.json()
 
         else:
             raise HTTPException(status_code=500, detail="Failed to create order in data-api")
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/orders/{order_id}/details")
+async def create_order_details(order_id: str, orderDetail: OrderDetail, background_tasks: BackgroundTasks):
+    try:
+        response = httpx.post(f'http://localhost:8080/orders/{order_id}/details', json=orderDetail.dict())
+        logging.info(f"Data-api response status: {response.status_code}, text: {response.text}")
+
+        if response.status_code == 201:
+            for websocket in websockets:
+                await websocket.send_text("Refetch orders")
+            return response.json()
+        else:
+            raise HTTPException(status_code=500, detail="Failed to create order details in data-api")
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
