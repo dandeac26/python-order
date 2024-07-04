@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a75b950f-fdcb-46bf-b203-5a58bcad3a07" name="Changes" comment="middleware python service">
+    <list default="true" id="a75b950f-fdcb-46bf-b203-5a58bcad3a07" name="Changes" comment="middleware python service&#10;add dockerfile">
       <change beforePath="$PROJECT_DIR$/../../../../docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java/data-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Java/data-api/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../scripts/clients.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../scripts/clients.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../scripts/stocks.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../scripts/stocks.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +95,10 @@
       <workItem from="1719479489297" duration="10307000" />
       <workItem from="1719564004530" duration="9966000" />
       <workItem from="1719601027960" duration="615000" />
+      <workItem from="1719602050160" duration="45000" />
+      <workItem from="1719843175605" duration="1893000" />
+      <workItem from="1719916528909" duration="3856000" />
+      <workItem from="1720085535394" duration="626000" />
     </task>
     <task id="LOCAL-00001" summary="middleware python service">
       <option name="closed" value="true" />
@@ -104,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718491795437</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="middleware python service">
+      <option name="closed" value="true" />
+      <created>1719602077178</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719602077178</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,7 +124,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="middleware python service" />
-    <option name="LAST_COMMIT_MESSAGE" value="middleware python service" />
+    <MESSAGE value="middleware python service&#10;add dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="middleware python service&#10;add dockerfile" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/test2$main.coverage" NAME="main Coverage Results" MODIFIED="1719095623038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

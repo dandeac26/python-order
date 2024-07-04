@@ -3,11 +3,13 @@ from pydantic import BaseModel
 import httpx
 from dotenv import load_dotenv
 import logging
-
+import os
 from starlette.websockets import WebSocketDisconnect
 
 load_dotenv()
 
+# DATA_API_SERVICE_URL = "localhost"
+DATA_API_SERVICE_URL = os.getenv("DATA_API_HOST")
 app = FastAPI()
 
 websockets = []
@@ -38,7 +40,7 @@ class SensorData(BaseModel):
 @app.get("/orders")
 async def read_orders():
     try:
-        response = httpx.get('http://localhost:8080/orders')
+        response = httpx.get(f'http://{DATA_API_SERVICE_URL}:8080/orders')
         logging.info(f"Data-api response status: {response.status_code}, text: {response.text}")
         return response.json()
 
@@ -53,7 +55,7 @@ async def create_order(order: Order, background_tasks: BackgroundTasks):
         order_data = str(order.dict())
         print(order_data)
 
-        response = httpx.post('http://localhost:8080/orders', json=order.dict())
+        response = httpx.post(f'http://{DATA_API_SERVICE_URL}:8080/orders', json=order.dict())
         logging.info(f"Data-api response status: {response.status_code}, text: {response.text}")
 
         print(response.status_code)
@@ -93,7 +95,7 @@ async def create_alert(sensorData: SensorData):
 @app.post("/orders/{order_id}/details")
 async def create_order_details(order_id: str, orderDetail: OrderDetail, background_tasks: BackgroundTasks):
     try:
-        response = httpx.post(f'http://localhost:8080/orders/{order_id}/details', json=orderDetail.dict())
+        response = httpx.post(f'http://{DATA_API_SERVICE_URL}:8080/orders/{order_id}/details', json=orderDetail.dict())
         logging.info(f"Data-api response status: {response.status_code}, text: {response.text}")
 
         if response.status_code == 201:
@@ -110,7 +112,7 @@ async def create_order_details(order_id: str, orderDetail: OrderDetail, backgrou
 @app.delete("/orders/{orderId}")
 async def delete_order(orderId: str):
     try:
-        response = httpx.delete(f'http://localhost:8080/orders/{orderId}')
+        response = httpx.delete(f'http://{DATA_API_SERVICE_URL}:8080/orders/{orderId}')
 
         if response.status_code == 204:
             for websocket in websockets:
