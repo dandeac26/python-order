@@ -48,6 +48,16 @@ async def read_orders():
         raise HTTPException(status_code=500, detail=str(e))
 
 
+@app.delete("/orders")
+async def delete_orders():
+    try:
+        response = httpx.delete(f'http://{DATA_API_SERVICE_URL}:8080/orders')
+        return response.json()
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
 @app.post("/orders")
 async def create_order(order: Order, background_tasks: BackgroundTasks):
     try:

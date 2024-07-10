@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a75b950f-fdcb-46bf-b203-5a58bcad3a07" name="Changes" comment="middleware python service&#10;add dockerfile">
+      <change afterPath="$PROJECT_DIR$/../../../../bakery_data/pg_stat_tmp/db_0.stat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../bakery_data/pg_stat_tmp/db_16384.stat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../bakery_data/pg_stat_tmp/global.stat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Java/data-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Java/data-api/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../scripts/stocks.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../scripts/stocks.json" afterDir="false" />
@@ -98,7 +100,10 @@
       <workItem from="1719602050160" duration="45000" />
       <workItem from="1719843175605" duration="1893000" />
       <workItem from="1719916528909" duration="3856000" />
-      <workItem from="1720085535394" duration="626000" />
+      <workItem from="1720085535394" duration="1509000" />
+      <workItem from="1720381525772" duration="1288000" />
+      <workItem from="1720435948841" duration="5754000" />
+      <workItem from="1720546092350" duration="3369000" />
     </task>
     <task id="LOCAL-00001" summary="middleware python service">
       <option name="closed" value="true" />
