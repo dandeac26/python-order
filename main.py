@@ -4,6 +4,7 @@ import httpx
 from dotenv import load_dotenv
 import logging
 import os
+import asyncio
 from starlette.websockets import WebSocketDisconnect
 
 load_dotenv()
@@ -141,6 +142,9 @@ async def websocket_endpoint(websocket: WebSocket):
     websockets.append(websocket)
     try:
         while True:
-            data = await websocket.receive_text()
+            try:
+                data = await asyncio.wait_for(websocket.receive_text(), timeout=30.0)
+            except asyncio.TimeoutError:
+                await websocket.send_text("ping")
     except WebSocketDisconnect:
         websockets.remove(websocket)
